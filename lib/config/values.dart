@@ -1,44 +1,36 @@
+// ignore_for_file: non_constant_identifier_names
+
 import 'package:flutter/cupertino.dart';
-
-///
-/// size values
-const double kSizeBase = 8;
-
-const double kSizeSmall = 8;
-const double kSizeNormal = 16;
-const double kSizeMedium = 24;
-const double kSizeLarge = 32;
-const double kSizeExtraLarge = 64;
 
 ///
 /// spacing values
 const double kBasePadding = 16;
 
-const double kPaddingSmall = 8;
-const double kPaddingNormal = 16;
-const double kPaddingMedium = 24;
-const double kPaddingLarge = 32;
-const double kPaddingExtraLarge = 64;
+const double kPadding_8 = 8;
+const double kPadding_16 = 16;
+const double kPadding_24 = 24;
+const double kPadding_32 = 32;
+const double kPadding_64 = 64;
 
 ///
 /// sized box spacing
-const kSizedWidth = SizedBox(width: kBasePadding);
-const kSizedHeight = SizedBox(height: kBasePadding);
+const kSizedBoxWidth = SizedBox(width: kBasePadding);
+const kSizedBoxHeight = SizedBox(height: kBasePadding);
 
-const kSizedWidthSmall = SizedBox(width: kPaddingSmall);
-const kSizedHeightSmall = SizedBox(height: kPaddingSmall);
+const kSizedBoxWidth_8 = SizedBox(width: kPadding_8);
+const kSizedBoxHeight_8 = SizedBox(height: kPadding_8);
 
-const kSizedWidthNormal = SizedBox(width: kPaddingNormal);
-const kSizedHeightNormal = SizedBox(height: kPaddingNormal);
+const kSizedBoxWidth_16 = SizedBox(width: kPadding_16);
+const kSizedBoxHeight_16 = SizedBox(height: kPadding_16);
 
-const kSizedWidthMedium = SizedBox(width: kPaddingNormal);
-const kSizedHeightMedium = SizedBox(height: kPaddingNormal);
+const kSizedBoxWidth_24 = SizedBox(width: kPadding_24);
+const kSizedBoxHeight_24 = SizedBox(height: kPadding_24);
 
-const kSizedWidthLarge = SizedBox(width: kPaddingLarge);
-const kSizedHeightLarge = SizedBox(height: kPaddingLarge);
+const kSizedBoxWidth_32 = SizedBox(width: kPadding_32);
+const kSizedBoxHeight_32 = SizedBox(height: kPadding_32);
 
-const kSizedWidthExtraLarge = SizedBox(width: kPaddingExtraLarge);
-const kSizedHeightExtraLarge = SizedBox(height: kPaddingExtraLarge);
+const kSizedBoxWidth_64 = SizedBox(width: kPadding_64);
+const kSizedBoxHeight_64 = SizedBox(height: kPadding_64);
 
 ///
 /// 
