@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_clone/screens/home/widgets/subtitle_message.dart';
 import '../../../components/text.dart';
 import '../../../config/colors.dart';
 import '../../../data/call_list_data.dart';
@@ -24,10 +25,10 @@ class CallTab_widget extends StatelessWidget {
                   NetworkImage(callListData[index]['pofileImage'].toString())),
           title:
               TitleMedium__text(text: callListData[index]['name'].toString()),
-          subtitle: BodyLarge__text(
-            text: callListData[index]['time'].toString(),
-            color: kColorSecondary700,
-          ),
+          subtitle: SubtitleMessage__widget(
+              icon: Icons.call_received,
+              data: callListData[index]['time'].toString(),
+              iconColor: Colors.green),
           trailing: TrailingIcon(),
         );
       },

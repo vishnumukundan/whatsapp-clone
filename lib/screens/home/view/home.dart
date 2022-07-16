@@ -28,6 +28,8 @@ class _ScreenHomeState extends State<ScreenHome>
 
   @override
   Widget build(BuildContext context) {
+    ScreenConfig().init(context);
+
     return Scaffold(
       body: NestedScrollView(
         headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
