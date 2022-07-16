@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:whatsapp_clone/config/colors.dart';
 import 'package:whatsapp_clone/config/text_config.dart';
 
 ///
@@ -99,6 +98,7 @@ class DisplayLarge__text extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text__widget(
       text: text,
+      color: color,
       fontSize: size ?? kConfig_DisplayLarge_FontSize,
       letterSpacing: letterSpacing ?? kConfig_DisplayLarge_LetterSpacing,
       height: kConfig_DisplayLarge_LineHeight,
@@ -131,6 +131,7 @@ class DisplayMedium__text extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text__widget(
       text: text,
+      color: color,
       fontSize: size ?? kConfig_DisplayMedium_FontSize,
       letterSpacing: letterSpacing ?? kConfig_DisplayMedium_LetterSpacing,
       height: kConfig_DisplayMedium_LineHeight,
@@ -163,6 +164,7 @@ class DisplaySmall__text extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text__widget(
       text: text,
+      color: color,
       fontSize: size ?? kConfig_DisplaySmall_FontSize,
       letterSpacing: letterSpacing ?? kConfig_DisplaySmall_LetterSpacing,
       height: kConfig_DisplaySmall_LineHeight,
@@ -196,6 +198,7 @@ class HeadlineLarge__text extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text__widget(
       text: text,
+      color: color,
       fontSize: size ?? kConfig_HeadlineLarge_FontSize,
       letterSpacing: letterSpacing ?? kConfig_HeadlineLarge_LetterSpacing,
       height: kConfig_HeadlineLarge_LineHeight,
@@ -228,6 +231,7 @@ class HeadlineMedium__text extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text__widget(
       text: text,
+      color: color,
       fontSize: size ?? kConfig_HeadlineMedium_FontSize,
       letterSpacing: letterSpacing ?? kConfig_HeadlineMedium_LetterSpacing,
       height: kConfig_HeadlineMedium_LineHeight,
@@ -260,6 +264,7 @@ class HeadlineSmall__text extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text__widget(
       text: text,
+      color: color,
       fontSize: size ?? kConfig_HeadlineSmall_FontSize,
       letterSpacing: letterSpacing ?? kConfig_HeadlineSmall_LetterSpacing,
       height: kConfig_HeadlineSmall_LineHeight,
@@ -293,6 +298,7 @@ class TitleLarge__text extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text__widget(
       text: text,
+      color: color,
       fontSize: size ?? kConfig_TitleLarge_FontSize,
       letterSpacing: letterSpacing ?? kConfig_TitleLarge_LetterSpacing,
       height: kConfig_TitleLarge_LineHeight,
@@ -325,6 +331,7 @@ class TitleMedium__text extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text__widget(
       text: text,
+      color: color,
       fontSize: size ?? kConfig_TitleMedium_FontSize,
       letterSpacing: letterSpacing ?? kConfig_TitleMedium_LetterSpacing,
       height: kConfig_TitleMedium_LineHeight,
@@ -357,6 +364,7 @@ class TitleSmall__text extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text__widget(
       text: text,
+      color: color,
       fontSize: size ?? kConfig_TitleSmall_FontSize,
       letterSpacing: letterSpacing ?? kConfig_TitleSmall_LetterSpacing,
       height: kConfig_TitleSmall_LineHeight,
@@ -390,6 +398,7 @@ class LabelLarge__text extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text__widget(
       text: text,
+      color: color,
       fontSize: size ?? kConfig_LabelLarge_FontSize,
       letterSpacing: letterSpacing ?? kConfig_LabelLarge_LetterSpacing,
       height: kConfig_LabelLarge_LineHeight,
@@ -422,6 +431,7 @@ class LabelMedium__text extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text__widget(
       text: text,
+      color: color,
       fontSize: size ?? kConfig_LabelMedium_FontSize,
       letterSpacing: letterSpacing ?? kConfig_LabelMedium_LetterSpacing,
       height: kConfig_LabelMedium_LineHeight,
@@ -454,6 +464,7 @@ class LabelSmall__text extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text__widget(
       text: text,
+      color: color,
       fontSize: size ?? kConfig_LabelSmall_FontSize,
       letterSpacing: letterSpacing ?? kConfig_LabelSmall_LetterSpacing,
       height: kConfig_LabelSmall_LineHeight,
@@ -487,6 +498,7 @@ class BodyLarge__text extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text__widget(
       text: text,
+      color: color,
       fontSize: size ?? kConfig_LabelLarge_FontSize,
       letterSpacing: letterSpacing ?? kConfig_BodyLarge_LetterSpacing,
       height: kConfig_BodyLarge_LineHeight,
@@ -519,6 +531,7 @@ class BodyMedium__text extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text__widget(
       text: text,
+      color: color,
       fontSize: size ?? kConfig_LabelMedium_FontSize,
       letterSpacing: letterSpacing ?? kConfig_BodyMedium_LetterSpacing,
       height: kConfig_BodyMedium_LineHeight,
@@ -551,6 +564,7 @@ class BodySmall__text extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text__widget(
       text: text,
+      color: color,
       fontSize: size ?? kConfig_LabelSmall_FontSize,
       letterSpacing: letterSpacing ?? kConfig_BodySmall_LetterSpacing,
       height: kConfig_BodySmall_LineHeight,
@@ -584,6 +598,7 @@ class Button__text extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text__widget(
       text: text.toString().toUpperCase(),
+      color: color,
       fontSize: size ?? kConfig_Button_FontSize,
       letterSpacing: letterSpacing ?? kConfig_Button_LetterSpacing,
       height: kConfig_Button_LineHeight,
@@ -617,6 +632,7 @@ class Caption__text extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text__widget(
       text: text,
+      color: color,
       fontSize: size ?? kConfig_Caption_FontSize,
       letterSpacing: letterSpacing ?? kConfig_Caption_LetterSpacing,
       height: kConfig_Caption_LineHeight,
@@ -650,6 +666,7 @@ class Overline__text extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text__widget(
       text: text.toString().toUpperCase(),
+      color: color,
       fontSize: size ?? kConfig_Overline_FontSize,
       letterSpacing: letterSpacing ?? kConfig_Overline_LetterSpacing,
       height: kConfig_Overline_LineHeight,

@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 
-final double designScreenHeight = 844.0;
-final double designScreenWidth = 390.0;
+const double designScreenHeight = 844.0;
+const double designScreenWidth = 390.0;
 
 ///
 /// return current screen's height, width and orientation

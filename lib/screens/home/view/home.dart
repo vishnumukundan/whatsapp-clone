@@ -1,73 +1,163 @@
 import 'package:flutter/material.dart';
-import 'package:whatsapp_clone/components/text.dart';
-import 'package:whatsapp_clone/config/screen_size_config.dart';
-import 'package:whatsapp_clone/config/values.dart';
+import 'package:whatsapp_clone/screens/home/widgets/status_tab.dart';
 
-class ScreenHome extends StatelessWidget {
-  ScreenHome({Key? key}) : super(key: key);
+import '../../../components/text.dart';
+import '../../../config/colors.dart';
+import '../../../config/screen_size_config.dart';
+import '../widgets/calls_tab.dart';
+import '../widgets/chat_tab.dart';
 
-  final data =
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus gravida quis blandit turpis cursus in hac habitasse. Sit amet tellus cras adipiscing enim eu turpis egestas pretium.';
+class ScreenHome extends StatefulWidget {
+  const ScreenHome({Key? key}) : super(key: key);
 
-  // final data = 'Lorem ipsum dolor sit amet, consectetur';
+  @override
+  State<ScreenHome> createState() => _ScreenHomeState();
+}
+
+late final TabController _tabController;
+
+class _ScreenHomeState extends State<ScreenHome>
+    with SingleTickerProviderStateMixin {
+  ///
+  ///
+  @override
+  void initState() {
+    super.initState();
+    _tabController = TabController(length: 4, vsync: this);
+  }
 
   @override
   Widget build(BuildContext context) {
-    ///
-    ///initialising screenConfig
-    ScreenConfig().init(context);
-
-    ///
     return Scaffold(
-      body: SafeArea(
-          child: SingleChildScrollView(
-        child: Padding(
-          padding:
-              EdgeInsets.symmetric(horizontal: getScreenWidthPercentage(5.0)),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              kSizedBoxHeight,
-              DisplayLarge__text(text: 'data'),
-              kSizedBoxHeight,
-              DisplayMedium__text(text: 'data'),
-              kSizedBoxHeight,
-              DisplaySmall__text(text: 'data'),
-              kSizedBoxHeight,
-              HeadlineLarge__text(text: 'data'),
-              kSizedBoxHeight,
-              HeadlineMedium__text(text: 'data'),
-              kSizedBoxHeight,
-              HeadlineSmall__text(text: 'data'),
-              kSizedBoxHeight,
-              TitleLarge__text(text: 'data'),
-              kSizedBoxHeight,
-              TitleMedium__text(text: 'data'),
-              kSizedBoxHeight,
-              TitleSmall__text(text: 'data'),
-              kSizedBoxHeight,
-              LabelLarge__text(text: 'data'),
-              kSizedBoxHeight,
-              LabelMedium__text(text: 'data'),
-              kSizedBoxHeight,
-              LabelSmall__text(text: 'data'),
-              kSizedBoxHeight,
-              BodyLarge__text(text: '$data'),
-              kSizedBoxHeight,
-              BodyMedium__text(text: '$data'),
-              kSizedBoxHeight,
-              BodySmall__text(text: '$data'),
-              kSizedBoxHeight,
-              Button__text(text: 'data'),
-              kSizedBoxHeight,
-              Caption__text(text: 'data'),
-              kSizedBoxHeight,
-              Overline__text(text: 'data'),
-              kSizedBoxHeight_64,
-            ],
-          ),
+      body: NestedScrollView(
+        headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
+          return <Widget>[
+            SliverAppBar(
+              elevation: 0,
+              backgroundColor: kColorPrimary,
+              title: const TitleLarge__text(
+                text: 'WhatsApp',
+                color: kColorPrimary50,
+                size: 20.0,
+              ),
+              actions: [
+                IconButton(
+                    onPressed: () {},
+                    icon: const Icon(
+                      Icons.search,
+                      color: kColorPrimary50,
+                    )),
+                IconButton(
+                    onPressed: () {},
+                    icon: const Icon(
+                      Icons.more_vert,
+                      color: kColorPrimary50,
+                    )),
+              ],
+              pinned: true,
+              floating: true,
+              forceElevated: innerBoxIsScrolled,
+              bottom: TabBar(
+                isScrollable: true,
+                indicatorColor: kColorPrimary50,
+                indicatorWeight: 3,
+                tabs: [
+                  Container(
+                    width: 24,
+                    child: const Tab(
+                      icon: Icon(Icons.camera_alt_rounded,
+                          color: kColorPrimary50),
+                    ),
+                  ),
+                  Container(
+                    width: getScreenWidthPercentage(20),
+                    child: const Tab(
+                      child:
+                          Button__text(text: 'chats', color: kColorPrimary50),
+                    ),
+                  ),
+                  Container(
+                    width: getScreenWidthPercentage(20),
+                    child: const Tab(
+                      child:
+                          Button__text(text: 'status', color: kColorPrimary50),
+                    ),
+                  ),
+                  Container(
+                    width: getScreenWidthPercentage(20),
+                    child: const Tab(
+                      child:
+                          Button__text(text: 'calls', color: kColorPrimary50),
+                    ),
+                  ),
+                ],
+                controller: _tabController,
+              ),
+            ),
+          ];
+        },
+        body: TabBarView(
+          controller: _tabController,
+          children: <Widget>[
+            const Center(child: HeadlineLarge__text(text: 'Camera')),
+            ChatTab_widget(onTap: () {}),
+            StatusTab_widget(onTap: () {}),
+            CallTab_widget(onTap: () {}),
+          ],
         ),
-      )),
+      ),
     );
   }
 }
+
+///
+///
+///
+///
+///
+///
+///
+///
+///
+
+// class _ScreenHomeState extends State<ScreenHome> with SingleTickerProviderStateMixin {
+//   late final TabController _tabController;
+
+//   @override
+//   void initState() {
+//     super.initState();
+//     _tabController = TabController(length: 2, vsync: this);
+//   }
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       body: NestedScrollView(
+//         headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
+//           return <Widget>[
+//             SliverAppBar(
+//               title: Text('Weight Tracker'),
+//               pinned: true,
+//               floating: true,
+//               forceElevated: innerBoxIsScrolled,
+//               bottom: TabBar(
+//                 tabs: <Tab>[
+//                   Tab(text: 'STATISTICS'),
+//                   Tab(text: 'HISTORY'),
+//                 ],
+//                 controller: _tabController,
+//               ),
+//             ),
+//           ];
+//         },
+//         body: TabBarView(
+//           controller: _tabController,
+//           children: <Widget>[
+//             StatisticsPage(),
+//             HistoryPage(),
+//           ],
+//         ),
+//       ),
+//     );
+//   }
+// }
