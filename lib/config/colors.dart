@@ -33,5 +33,5 @@ const kColorPrimaryContainer = kColorPrimary50;
 const kColorSecondary = kColorSecondary400;
 const kColorSecondaryContainer = kColorSecondary50;
 
-const kColorAccent = kColorPrimary400;
+const kColorAccent = kColorPrimary500;
 const kColorAccentContainer = kColorPrimary100;

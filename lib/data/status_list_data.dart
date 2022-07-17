@@ -54,7 +54,7 @@ const statusViewedListData = [
     'name': 'Karan kapoor',
     'time': 'Today, 2:34 pm',
     'pofileImage':
-        'https://th.bing.com/th/id/R.d6029ce6e0b7b19bc90bff7c75f0bda2?rik=TcWktK9KLHhObw&riu=https%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2ff%2f6%2f7%2f563540.jpg&ehk=lmPxq88yMfOMS2Od%2bu%2fYE3ouB9%2f3kmkyUPiqxrHk6Gs%3d&risl=&pid=ImgRaw&r=0',
+        'https://www.perfocal.com/blog/content/images/2020/07/Perfocal_Male_Dating_Profile_Portrait_Asian.jpg',
   },
   {
     'name': 'Rajveer mishra',
