@@ -15,14 +15,18 @@ class CallTab_widget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
+      padding: const EdgeInsets.all(0),
       itemCount: callListData.length,
       itemBuilder: (context, index) {
         return ListTile(
           onTap: onTap,
-          leading: CircleAvatar(
-              backgroundColor: kColorSecondary,
-              backgroundImage:
-                  NetworkImage(callListData[index]['pofileImage'].toString())),
+          leading: Padding(
+            padding: const EdgeInsets.all(2.0),
+            child: CircleAvatar(
+                backgroundColor: kColorSecondary,
+                backgroundImage: NetworkImage(
+                    callListData[index]['pofileImage'].toString())),
+          ),
           title:
               TitleMedium__text(text: callListData[index]['name'].toString()),
           subtitle: SubtitleMessage__widget(

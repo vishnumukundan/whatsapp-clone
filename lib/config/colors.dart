@@ -1,16 +1,16 @@
 import 'package:flutter/cupertino.dart';
 
-const kColorPrimary900 = Color(0xff275950);
-const kColorPrimary800 = Color(0xff146D5D);
+const kColorPrimary900 = Color(0xff004535);
+const kColorPrimary800 = Color(0xff006D55);
 const kColorPrimary700 = Color(0xff008069);
-const kColorPrimary600 = Color(0xff209780);
-const kColorPrimary500 = Color(0xff3FAC96);
-const kColorPrimary400 = Color(0xff5FBEAA);
-const kColorPrimary300 = Color(0xff7ECFBE);
-const kColorPrimary200 = Color(0xff9EDED0);
-const kColorPrimary100 = Color(0xffBDEBE0);
-const kColorPrimary50 = Color(0xffDDF6F0);
-const kColorPrimary10 = Color(0xffFCFEFE);
+const kColorPrimary600 = Color(0xff20976F);
+const kColorPrimary500 = Color(0xff3FAC75);
+const kColorPrimary400 = Color(0xff5FBE7D);
+const kColorPrimary300 = Color(0xff7ECF89);
+const kColorPrimary200 = Color(0xff9EDE9E);
+const kColorPrimary100 = Color(0xffBDEBBD);
+const kColorPrimary50 = Color(0xffDDF6DD);
+const kColorPrimary10 = Color(0xffFDFEFC);
 
 const kColorSecondary900 = Color(0xff23272B);
 const kColorSecondary800 = Color(0xff4C535A);
@@ -33,5 +33,5 @@ const kColorPrimaryContainer = kColorPrimary50;
 const kColorSecondary = kColorSecondary400;
 const kColorSecondaryContainer = kColorSecondary50;
 
-const kColorAccent = kColorPrimary600;
+const kColorAccent = kColorPrimary400;
 const kColorAccentContainer = kColorPrimary100;

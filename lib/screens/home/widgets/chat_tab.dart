@@ -15,14 +15,18 @@ class ChatTab_widget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
+      padding: const EdgeInsets.all(0),
       itemCount: chatListData.length,
       itemBuilder: (context, index) {
         return ListTile(
           onTap: onTap,
-          leading: CircleAvatar(
-              backgroundColor: kColorSecondary,
-              backgroundImage:
-                  NetworkImage(chatListData[index]['pofileImage'].toString())),
+          leading: Padding(
+            padding: const EdgeInsets.all(2.0),
+            child: CircleAvatar(
+                backgroundColor: kColorSecondary,
+                backgroundImage: NetworkImage(
+                    chatListData[index]['pofileImage'].toString())),
+          ),
           title:
               TitleMedium__text(text: chatListData[index]['name'].toString()),
           subtitle: SubtitleMessage__widget(

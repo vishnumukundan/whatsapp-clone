@@ -18,7 +18,7 @@ class StatusTab_widget extends StatelessWidget {
     var totalLength =
         statusRecentListData.length + statusViewedListData.length + 3;
     return ListView.builder(
-      // shrinkWrap: true,
+      padding: const EdgeInsets.all(0),
       itemCount: totalLength,
       itemBuilder: (context, index) {
         if (index == 0) {
@@ -40,11 +40,20 @@ class StatusTab_widget extends StatelessWidget {
           var newIndexValue = index - 2;
           return ListTile(
             onTap: onTap,
-            leading: CircleAvatar(
-                backgroundColor: kColorSecondary,
-                backgroundImage: NetworkImage(
-                    statusRecentListData[newIndexValue]['pofileImage']
-                        .toString())),
+            leading: Container(
+              decoration: BoxDecoration(
+                border: Border.all(width: 2, color: kColorAccent),
+                shape: BoxShape.circle,
+              ),
+              child: Padding(
+                padding: const EdgeInsets.all(2.0),
+                child: CircleAvatar(
+                    backgroundColor: kColorSecondary,
+                    backgroundImage: NetworkImage(
+                        statusRecentListData[newIndexValue]['pofileImage']
+                            .toString())),
+              ),
+            ),
             title: TitleMedium__text(
                 text: statusRecentListData[newIndexValue]['name'].toString()),
             subtitle: BodyLarge__text(
@@ -73,11 +82,20 @@ class StatusTab_widget extends StatelessWidget {
           var newIndexValue = index - (statusRecentListData.length + 3);
           return ListTile(
             onTap: onTap,
-            leading: CircleAvatar(
-                backgroundColor: kColorSecondary,
-                backgroundImage: NetworkImage(
-                    statusViewedListData[newIndexValue]['pofileImage']
-                        .toString())),
+            leading: Container(
+              decoration: BoxDecoration(
+                border: Border.all(width: 2, color: kColorSecondary),
+                shape: BoxShape.circle,
+              ),
+              child: Padding(
+                padding: const EdgeInsets.all(2.0),
+                child: CircleAvatar(
+                    backgroundColor: kColorSecondary,
+                    backgroundImage: NetworkImage(
+                        statusViewedListData[newIndexValue]['pofileImage']
+                            .toString())),
+              ),
+            ),
             title: TitleMedium__text(
                 text: statusViewedListData[newIndexValue]['name'].toString()),
             subtitle: BodyLarge__text(
@@ -97,14 +115,36 @@ class StatusTab_widget extends StatelessWidget {
   ///
   ///
   ///
-  ///
+  ///My status widget
   ListTile myStatusListTile__method() {
     return ListTile(
       onTap: onTap,
-      leading: CircleAvatar(
-          backgroundColor: kColorSecondary,
-          backgroundImage:
-              NetworkImage(chatListData[9]['pofileImage'].toString())),
+      leading: Stack(children: [
+        Padding(
+          padding: const EdgeInsets.all(2.0),
+          child: CircleAvatar(
+              backgroundColor: kColorSecondary,
+              backgroundImage:
+                  NetworkImage(chatListData[9]['pofileImage'].toString())),
+        ),
+        Positioned(
+          bottom: -1,
+          right: -1,
+          child: Container(
+            width: 22,
+            height: 22,
+            decoration: BoxDecoration(
+                color: kColorAccent,
+                borderRadius: BorderRadius.circular(60),
+                border: Border.all(color: kColorWhite, width: 2)),
+            child: Icon(
+              Icons.add,
+              size: 18,
+              color: kColorWhite,
+            ),
+          ),
+        ),
+      ]),
       title: const TitleMedium__text(text: 'My status'),
       subtitle: const BodyLarge__text(
         text: 'Tap to add status update',
