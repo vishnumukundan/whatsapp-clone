@@ -5,12 +5,7 @@ import '../../../config/colors.dart';
 import '../../../data/status_list_data.dart';
 
 class StatusTab_widget extends StatelessWidget {
-  const StatusTab_widget({
-    Key? key,
-    required this.onTap,
-  }) : super(key: key);
-
-  final onTap;
+  const StatusTab_widget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -39,7 +34,7 @@ class StatusTab_widget extends StatelessWidget {
         if (index > 1 && index < statusRecentListData.length + 2) {
           var newIndexValue = index - 2;
           return ListTile(
-            onTap: onTap,
+            onTap: () {},
             leading: Container(
               decoration: BoxDecoration(
                 border: Border.all(width: 2, color: kColorAccent),
@@ -81,7 +76,7 @@ class StatusTab_widget extends StatelessWidget {
         if (index > statusRecentListData.length + 2) {
           var newIndexValue = index - (statusRecentListData.length + 3);
           return ListTile(
-            onTap: onTap,
+            onTap: () {},
             leading: Container(
               decoration: BoxDecoration(
                 border: Border.all(width: 2, color: kColorSecondary),
@@ -118,7 +113,7 @@ class StatusTab_widget extends StatelessWidget {
   ///My status widget
   ListTile myStatusListTile__method() {
     return ListTile(
-      onTap: onTap,
+      onTap: () {},
       leading: Stack(children: [
         Padding(
           padding: const EdgeInsets.all(2.0),

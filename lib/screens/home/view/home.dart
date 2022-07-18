@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp_clone/screens/home/widgets/status_tab.dart';
+import 'package:whatsapp_clone/test_file.dart';
+import 'package:whatsapp_clone/utilities/services/navigator.dart';
 
 import '../../../components/text.dart';
 import '../../../config/colors.dart';
@@ -66,7 +68,9 @@ class _ScreenHomeState extends State<ScreenHome>
                         color: kColorPrimary50,
                       )),
                   IconButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        PageNav().push(context, TestWidget());
+                      },
                       icon: const Icon(
                         Icons.more_vert,
                         color: kColorPrimary50,
@@ -120,9 +124,9 @@ class _ScreenHomeState extends State<ScreenHome>
             controller: _tabController,
             children: <Widget>[
               const Center(child: HeadlineLarge__text(text: 'Camera')),
-              ChatTab_widget(onTap: () {}),
-              StatusTab_widget(onTap: () {}),
-              CallTab_widget(onTap: () {}),
+              ChatTab_widget(),
+              StatusTab_widget(),
+              CallTab_widget(),
             ],
           ),
         ),

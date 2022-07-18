@@ -2,15 +2,12 @@ import 'package:flutter/material.dart';
 import '../../../components/text.dart';
 import '../../../config/colors.dart';
 import '../../../data/chat_list_data.dart';
+import '../../../utilities/services/navigator.dart';
+import '../../chat/view/chat.dart';
 import 'subtitle_message.dart';
 
 class ChatTab_widget extends StatelessWidget {
-  const ChatTab_widget({
-    Key? key,
-    required this.onTap,
-  }) : super(key: key);
-
-  final onTap;
+  const ChatTab_widget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +16,9 @@ class ChatTab_widget extends StatelessWidget {
       itemCount: chatListData.length,
       itemBuilder: (context, index) {
         return ListTile(
-          onTap: onTap,
+          onTap: () {
+            PageNav().push(context, ScreenChat(dataIndex: index));
+          },
           leading: Padding(
             padding: const EdgeInsets.all(2.0),
             child: CircleAvatar(

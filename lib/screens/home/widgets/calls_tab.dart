@@ -7,10 +7,7 @@ import '../../../data/call_list_data.dart';
 class CallTab_widget extends StatelessWidget {
   const CallTab_widget({
     Key? key,
-    required this.onTap,
   }) : super(key: key);
-
-  final onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +16,7 @@ class CallTab_widget extends StatelessWidget {
       itemCount: callListData.length,
       itemBuilder: (context, index) {
         return ListTile(
-          onTap: onTap,
+          onTap: () {},
           leading: Padding(
             padding: const EdgeInsets.all(2.0),
             child: CircleAvatar(

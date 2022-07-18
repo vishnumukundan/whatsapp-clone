@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:whatsapp_clone/components/text.dart';
 import 'package:whatsapp_clone/config/values.dart';
-
 import '../../../config/colors.dart';
 
 Widget floatingActionButton(tabIndex) {
