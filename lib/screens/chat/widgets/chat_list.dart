@@ -96,7 +96,7 @@ class litIem_SendMessage extends StatelessWidget {
               bottomLeft: Radius.circular(8),
             ),
           ),
-          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
           child: Row(
             mainAxisSize: MainAxisSize.min,
             children: [
@@ -145,7 +145,7 @@ class litIem_ReceivedMessage extends StatelessWidget {
               bottomLeft: Radius.circular(8),
             ),
           ),
-          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
           child: Row(
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.end,
