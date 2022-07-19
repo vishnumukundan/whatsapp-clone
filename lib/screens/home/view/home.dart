@@ -9,6 +9,7 @@ import '../../../config/screen_size_config.dart';
 import '../widgets/calls_tab.dart';
 import '../widgets/chat_tab.dart';
 import '../widgets/floating_action_button.dart';
+import '../widgets/pop_menu.dart';
 
 class ScreenHome extends StatefulWidget {
   const ScreenHome({Key? key}) : super(key: key);
@@ -67,14 +68,7 @@ class _ScreenHomeState extends State<ScreenHome>
                         Icons.search,
                         color: kColorPrimary50,
                       )),
-                  IconButton(
-                      onPressed: () {
-                        PageNav().push(context, TestWidget());
-                      },
-                      icon: const Icon(
-                        Icons.more_vert,
-                        color: kColorPrimary50,
-                      )),
+                  PopMenu__widget(),
                 ],
                 pinned: true,
                 floating: true,

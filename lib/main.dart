@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_clone/screens/settings/view/settings.dart';
+import 'package:whatsapp_clone/test_file.dart';
 import 'screens/home/view/home.dart';
 
 void main() {
@@ -15,6 +17,8 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.teal,
       ),
       home: const ScreenHome(),
+      // home: TestWidget(),
+      // home: ScreenSettings(),
     );
   }
 }

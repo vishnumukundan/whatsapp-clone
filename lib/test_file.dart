@@ -41,76 +41,27 @@ class TestWidget extends StatelessWidget {
                       icon: const Icon(Icons.close)),
                 ),
                 kSizedBoxHeight_64,
-                Spacer(),
 
                 // testing widget start here
-                Container(
-                  padding: const EdgeInsets.all(8),
-                  color: kColorSecondary100,
-                  width: double.infinity,
-                  child: Row(
-                    mainAxisSize: MainAxisSize.min,
-                    crossAxisAlignment: CrossAxisAlignment.end,
-                    children: <Widget>[
-                      Expanded(
-                        child: Container(
-                          // height: 50,
-                          constraints: const BoxConstraints(
-                            minHeight: 50,
-                            maxHeight: 150,
-                          ),
-                          padding: const EdgeInsets.symmetric(
-                              horizontal: 8, vertical: 4),
-                          decoration: BoxDecoration(
-                            color: kColorWhite,
-                            borderRadius: BorderRadius.circular(24),
-                          ),
-                          child: Row(
-                            mainAxisSize: MainAxisSize.min,
-                            crossAxisAlignment: CrossAxisAlignment.end,
-                            children: [
-                              const Padding(
-                                padding: EdgeInsets.symmetric(vertical: 9.0),
-                                child: Icon(Icons.insert_emoticon_outlined,
-                                    color: kColorSecondary600, size: 24),
-                              ),
-                              kSizedBoxWidth_8,
-                              const Expanded(
-                                child: TextField(
-                                  keyboardType: TextInputType.multiline,
-                                  maxLines: null,
-                                  decoration: InputDecoration(
-                                    hintText: 'Message',
-                                    border: InputBorder.none,
-                                    // isDense: true,
-                                    // filled: true,
-                                  ),
-                                ),
-                              ),
-                              kSizedBoxWidth_8,
-                              Padding(
-                                padding:
-                                    const EdgeInsets.symmetric(vertical: 9.0),
-                                child: Transform.rotate(
-                                    alignment: Alignment.center,
-                                    angle: 5.5,
-                                    child: const Icon(Icons.attach_file,
-                                        color: kColorSecondary600, size: 24)),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                      kSizedBoxWidth_8,
-                      FloatingActionButton.small(
-                        onPressed: () {},
-                        backgroundColor: kColorPrimary400,
-                        elevation: 3,
-                        child: const Icon(Icons.send,
-                            color: kColorWhite, size: 20),
-                      )
-                    ],
-                  ),
+                PopupMenuButton<String>(
+                  itemBuilder: (BuildContext context) {
+                    return [
+                      const PopupMenuItem(
+                          value: 'New Group', child: Text('New Group')),
+                      const PopupMenuItem(
+                          value: 'New Broadcast', child: Text('New Broadcast')),
+                      const PopupMenuItem(
+                          value: 'Linked Devices',
+                          child: Text('Linked Devices')),
+                      const PopupMenuItem(
+                          value: 'Starres Messages',
+                          child: Text('Starres Messages')),
+                      const PopupMenuItem(
+                          value: 'Payments', child: Text('Payments')),
+                      const PopupMenuItem(
+                          value: 'Settings', child: Text('Settings')),
+                    ];
+                  },
                 )
                 // testing widget end here
               ],
