@@ -23,11 +23,13 @@ Widget floatingActionButton(tabIndex) {
       mainAxisAlignment: MainAxisAlignment.end,
       children: [
         FloatingActionButton.small(
+            heroTag: 'editBtn',
             backgroundColor: kColorSecondary200,
             onPressed: () {},
             child: const Icon(Icons.edit, color: kColorSecondary700)),
         kSizedBoxHeight_8,
         FloatingActionButton(
+            heroTag: 'photoBtn',
             backgroundColor: kColorAccent,
             onPressed: () {},
             child: const Icon(

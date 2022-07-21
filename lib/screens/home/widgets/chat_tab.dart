@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_clone/gen/assets.gen.dart';
 import '../../../components/text.dart';
 import '../../../config/colors.dart';
 import '../../../data/chat_list_data.dart';
@@ -23,8 +24,7 @@ class ChatTab_widget extends StatelessWidget {
             padding: const EdgeInsets.all(2.0),
             child: CircleAvatar(
                 backgroundColor: kColorSecondary,
-                backgroundImage: NetworkImage(
-                    chatListData[index]['pofileImage'].toString())),
+                backgroundImage: AssetImage(Assets.images.avatar.path)),
           ),
           title:
               TitleMedium__text(text: chatListData[index]['name'].toString()),

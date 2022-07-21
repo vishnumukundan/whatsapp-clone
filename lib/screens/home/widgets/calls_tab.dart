@@ -3,6 +3,7 @@ import 'package:whatsapp_clone/screens/home/widgets/subtitle_message.dart';
 import '../../../components/text.dart';
 import '../../../config/colors.dart';
 import '../../../data/call_list_data.dart';
+import '../../../gen/assets.gen.dart';
 
 class CallTab_widget extends StatelessWidget {
   const CallTab_widget({
@@ -21,8 +22,7 @@ class CallTab_widget extends StatelessWidget {
             padding: const EdgeInsets.all(2.0),
             child: CircleAvatar(
                 backgroundColor: kColorSecondary,
-                backgroundImage: NetworkImage(
-                    callListData[index]['pofileImage'].toString())),
+                backgroundImage: AssetImage(Assets.images.avatar.path)),
           ),
           title:
               TitleMedium__text(text: callListData[index]['name'].toString()),
@@ -30,7 +30,7 @@ class CallTab_widget extends StatelessWidget {
               icon: Icons.call_received,
               data: callListData[index]['time'].toString(),
               iconColor: Colors.green),
-          trailing: TrailingIcon(),
+          trailing: const TrailingIcon(),
         );
       },
     );
@@ -44,7 +44,7 @@ class TrailingIcon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Icon(
+    return const Icon(
       Icons.phone,
       color: kColorSecondary700,
     );

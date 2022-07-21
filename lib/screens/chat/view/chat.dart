@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp_clone/config/colors.dart';
 import 'package:whatsapp_clone/data/chat_list_data.dart';
+import 'package:whatsapp_clone/gen/assets.gen.dart';
 import 'package:whatsapp_clone/screens/chat/controller/focus_control.dart';
 import '../../../utilities/services/navigator.dart';
 import '../widgets/bottom_bar.dart';
@@ -26,8 +27,7 @@ class ScreenChat extends StatelessWidget {
               children: [
                 const Icon(Icons.arrow_back),
                 CircleAvatar(
-                  backgroundImage: NetworkImage(
-                      chatListData[dataIndex]['pofileImage'].toString()),
+                  backgroundImage: AssetImage(Assets.images.avatar.path),
                 ),
               ],
             ),
