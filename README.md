@@ -1,6 +1,23 @@
-# whatsapp_clone
+<div id="top"></div>
 
-A new Flutter project.
+<div align="center">
+  <a href="">
+    <img src="screenshots/github.png" alt="Logo" width="80" height="80">
+  </a>
+
+  <h3 align="center">Whatsapp Clone</h3>
+
+  <p align="center">
+    A Flutter project that mimics WhatsApp's UI and functionalities.
+    <br />
+    <a href="">View Demo</a>
+    ·
+    <a href="">Report Bug</a>
+    ·
+    <a href="">Request Feature</a>
+  </p>
+</div>
+
 
 ## Getting Started
 
@@ -15,11 +32,14 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
-<div style="display: grid;">
-    <img src="screenshots\camera.jpg" alt="camera screen" title="camera screen" style="display: inline-block; margin: 0 auto; max-width: 300px">
-    <img src="screenshots\chats.jpg" alt="chat screen" title="chat screen" style="display: inline-block; margin: 0 auto; max-width: 300px">
-    <img src="screenshots\status.jpg" alt="status screen" title="status screen" style="display: inline-block; margin: 0 auto; max-width: 300px">
-    <img src="screenshots\calls.jpg" alt="calls screen" title="calls screen" style="display: inline-block; margin: 0 auto; max-width: 300px">
-    <img src="screenshots\popmenu.jpg" alt="popmenu screen" title="popmenu screen" style="display: inline-block; margin: 0 auto; max-width: 300px">
-    <img src="screenshots\setings.jpg" alt="settings screen" title="settings screen" style="display: inline-block; margin: 0 auto; max-width: 300px">
+## Screen Shots
+
+<div style="display:grid">
+    <img style="width: 150px" src="screenshots/camera.jpg" alt="camera screen" title="camera screen">
+    <img style="width: 150px" src="screenshots/chats.jpg" alt="chat screen" title="chat screen">
+    <img style="width: 150px" src="screenshots/status.jpg" alt="status screen" title="status screen">
+    <img style="width: 150px" src="screenshots/calls.jpg" alt="calls screen" title="calls screen">
+    <img style="width: 150px" src="screenshots/popmenu.jpg" alt="popmenu screen" title="popmenu screen">
+    <img style="width: 150px" src="screenshots/setings.jpg" alt="settings screen" title="settings screen">
 </div>
+
