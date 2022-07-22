@@ -14,6 +14,10 @@
     <a href="#getting_started">Getting Started</a>
     ·
     <a href="#about_project">About The Project</a>
+    ·
+    <a href="#screenshots">Screenshots</a>
+    ·
+    <a href="#design_pattern">Design Pattern</a>
     .
     <a href="#acknowledgments">Acknowledgments</a>
     ·
@@ -44,7 +48,7 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
-<p align="right"><a href="#top"> :arrow_up: </a></p>
+<p align="right"><a href="#top"> :arrow_up_small: </a></p>
 
 <br />
 <!-- ABOUT THE PROJECT -->
@@ -58,12 +62,22 @@ This is a project that mimics the UI and some functionalities of the social medi
 
 ### Built With
 
+- [Dart](https://dart.dev/guides)
 - [Flutter](https://docs.flutter.dev/get-started/codelab)
 
+#### Packages
+
+- [Build Runner](https://pub.dev/packages/build_runner)
+- [Flutter Gen](https://pub.dev/packages/flutter_gen)
+
+
+<p align="right"><a href="#top"> :arrow_up_small: </a></p>
 
 <br />
+<!-- SCREENSHOTS -->
+<div id="screenshots"></div>
 
-### Screen Shots
+## :camera: Screenshots
 
 <div style="display:grid">
     <img style="width: 150px" src="screenshots/camera.jpg" alt="camera screen" title="camera screen">
@@ -75,17 +89,28 @@ This is a project that mimics the UI and some functionalities of the social medi
     <img style="width: 150px" src="screenshots/settings.jpg" alt="settings screen" title="settings screen">
 </div>
 
+<p align="right"><a href="#top"> :arrow_up_small: </a></p>
 
 <br />
+<!-- DESIGN PATTERN -->
+<div id="design_pattern"></div>
 
-### Design Pattern
+## :open_file_folder: Design Pattern
 
-- View
-  - Widgets
-- Presentation
-- Core
+- components (global componets)
+- config (app config like colors and size)
+- data (dummy data)
+- models
+- controller (global state management)
+- screens
+  - home
+    - view
+    - widgets
+    - controller (small controller of the view)
+- utilities
+  - services
 
-<p align="right"><a href="#top"> :arrow_up: </a></p>
+<p align="right"><a href="#top"> :arrow_up_small: </a></p>
 
 
 
@@ -95,6 +120,8 @@ This is a project that mimics the UI and some functionalities of the social medi
 
 ## :smiling_face_with_three_hearts: Aknowledgments
 
+- [Stack Overflow](https://stackoverflow.com/)
+- [Medium](https://medium.com/)
 - [Github Stickers](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md)
 
 
@@ -107,4 +134,4 @@ This is a project that mimics the UI and some functionalities of the social medi
 
 un-licensed
 
-<p align="right"><a href="#top"> :arrow_up: </a></p>
+<p align="right"><a href="#top"> :arrow_up_small: </a></p>
