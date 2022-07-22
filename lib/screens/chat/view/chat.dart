@@ -19,6 +19,7 @@ class ScreenChat extends StatelessWidget {
       child: Scaffold(
         backgroundColor: kColorSecondary100,
         appBar: AppBar(
+          backgroundColor: kColorPrimary,
           elevation: 0,
           leadingWidth: 70,
           leading: GestureDetector(

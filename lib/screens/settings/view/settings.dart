@@ -12,6 +12,7 @@ class ScreenSettings extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: kColorPrimary,
         elevation: 0,
         leading: GestureDetector(
           onTap: () => PageNav().pop(context),

@@ -67,11 +67,12 @@ This is a project that mimics the UI and some functionalities of the social medi
 
 <div style="display:grid">
     <img style="width: 150px" src="screenshots/camera.jpg" alt="camera screen" title="camera screen">
-    <img style="width: 150px" src="screenshots/chats.jpg" alt="chat screen" title="chat screen">
-    <img style="width: 150px" src="screenshots/status.jpg" alt="status screen" title="status screen">
-    <img style="width: 150px" src="screenshots/calls.jpg" alt="calls screen" title="calls screen">
+    <img style="width: 150px" src="screenshots/chats.jpg" alt="chat list screen" title="chat list screen">
+    <img style="width: 150px" src="screenshots/status.jpg" alt="status list screen" title="status list screen">
+    <img style="width: 150px" src="screenshots/calls.jpg" alt="calls list screen" title="calls list screen">
+    <img style="width: 150px" src="screenshots/chatScreen.jpg" alt="chat Screen screen" title="chat screen">
     <img style="width: 150px" src="screenshots/popmenu.jpg" alt="popmenu screen" title="popmenu screen">
-    <img style="width: 150px" src="screenshots/setings.jpg" alt="settings screen" title="settings screen">
+    <img style="width: 150px" src="screenshots/settings.jpg" alt="settings screen" title="settings screen">
 </div>
 
 
