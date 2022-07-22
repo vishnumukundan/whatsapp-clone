@@ -13,12 +13,8 @@
     <br />
     <a href="#getting_started">Getting Started</a>
     ·
-    <a href="#buit_with">Built With</a>
+    <a href="#about_project">About The Project</a>
     .
-    <a href="#screen_shots">Screen Shots</a>
-    ·
-    <a href="#design_pettern">Design Pattern</a>
-    ·
     <a href="#acknowledgments">Acknowledgments</a>
     ·
     <a href="#license">License</a>
@@ -37,10 +33,12 @@ This project is a starting point for a Flutter application.
 
 ### Prerequisites
 
-A few resources to get you started if this is your first Flutter project:
+A few programmes should be installed if you have not started with Flutter:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- [Flutter](https://docs.flutter.dev/get-started/install)
+- [Android Studio](https://developer.android.com/studio)
+- [Xcode (mac)](https://developer.apple.com/xcode/resources/)
+- [Visual Studio Code (optional)](https://code.visualstudio.com/Download)
 
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
@@ -49,20 +47,23 @@ samples, guidance on mobile development, and a full API reference.
 <p align="right"><a href="#top"> :arrow_up: </a></p>
 
 <br />
-<!-- BUILT WITH -->
-<div id="buit_with"></div>
+<!-- ABOUT THE PROJECT -->
+<div id="about_project"></div>
 
-## :hammer_and_wrench: Built With
+## :blue_book: About The Project
+
+This is a project that mimics the UI and some functionalities of the social media application WhatsApp. This project is mainly focused on the user interface of the application.
+
+<br />
+
+### Built With
 
 - [Flutter](https://docs.flutter.dev/get-started/codelab)
 
-<p align="right"><a href="#top"> :arrow_up: </a></p>
 
 <br />
-<!-- SCREEN SHOTS -->
-<div id="screen_shots"></div>
 
-## :camera: Screen Shots
+### Screen Shots
 
 <div style="display:grid">
     <img style="width: 150px" src="screenshots/camera.jpg" alt="camera screen" title="camera screen">
@@ -73,13 +74,10 @@ samples, guidance on mobile development, and a full API reference.
     <img style="width: 150px" src="screenshots/setings.jpg" alt="settings screen" title="settings screen">
 </div>
 
-<p align="right"><a href="#top"> :arrow_up: </a></p>
 
 <br />
-<!-- DESIGN PATTERN -->
-<div id="design_pettern"></div>
 
-## :open_file_folder: Design Pattern
+### Design Pattern
 
 - View
   - Widgets
@@ -87,6 +85,7 @@ samples, guidance on mobile development, and a full API reference.
 - Core
 
 <p align="right"><a href="#top"> :arrow_up: </a></p>
+
 
 
 <br />
