@@ -7,6 +7,7 @@
     <img src="screenshots/github.png" alt="Logo" width="80" height="80">
   </a>
 
+  # WhatsApp Clone
   
   <p align="center">
     A Flutter project that mimics WhatsApp's UI and some functionalities.
